@@ -1,1 +1,6 @@
 /target
+**/*.rs.bk
+*.pdb
+*.exe.stackdump
+.DS_Store
+Thumbs.db
