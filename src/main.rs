@@ -40,7 +40,7 @@ fn handle_connection(mut stream:TcpStream,port:&str)
     println!("Request: {}",String::from_utf8_lossy(&buffer[..]));
 
     let content = format!("<!DOCTYPE html><html lang='ja'><head><title>Document</title></head>\
-        <body><h1>Success at PORT = { }</h1></body>\
+        <body><h1>Success at PORT = {}</h1></body>\
         </html>",port);
     let body = content.as_bytes();
     let headers = format!(
